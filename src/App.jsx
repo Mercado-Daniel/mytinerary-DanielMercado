@@ -1,25 +1,11 @@
-import Main from './layouts/Main'
-import Carrousel from './components/Carrousel'
-import Card from './components/Card'
-import './App.css'
-import './styles/Header.css'
+import {RouterProvider} from 'react-router-dom';
+import router from './router/router';
 
 function App(){
 
-  return (
-  <>
-    <Main>
-      <main>
-      <div>
-          <Carrousel/>
-      </div>
-      <div>
-        <Card></Card>
-      </div>
-      </main>
-    </Main>
-  </>
-  )
+    return (
+      <RouterProvider router={router}/>
+    )
 }
 
 export default App
