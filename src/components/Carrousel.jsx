@@ -48,17 +48,22 @@ useEffect(() => {
     const currentImages = images.slice(index, index + 4);
 
     return (
-        <div className="container mx-auto mt-20">
+        <div className="container mx-auto mt-20 bg-gray-900 p-10 rounded-3xl">
             <h2 className="text-center text-3xl bg-green-700 text-gray-100">Popular Mytineraries!</h2>
             <div className=" grid grid-cols-2 grid-rows-2 bg-gray-300 ">
             {currentImages.map((image) => (
+                <div>
+
                 <div
                 key={image.title}
                 className="flex flex-col items-center border m-1 h-40"
                 style={{ backgroundImage: `url(${image.url})`, backgroundSize: "cover", backgroundPosition: "center" }}
                 >
-                    <p className="bg-white text-center p-2 opacity-80  ">{image.title}</p>
+                    
                 </div>
+                <p className="bg-gray-300 text-center   ">{image.title}</p>
+                </div>
+                
                 ))}
             </div>
             <div className="grid grid-cols-2">

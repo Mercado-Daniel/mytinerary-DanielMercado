@@ -41,18 +41,18 @@ const CityDetails = () => {
     }, []);
 
     return (
-        <main className="container mx-auto mt-20 mb-20 flex flex-col items-center justify-center bg-gray-200">
-            <section className="text-center text-3xl ">
-            {city ? (
-                <div className="my-12">
-                    <h1>{city.name}</h1>
-                    <div>
-                        <img src={city.image} alt="" className="w-1/2 h-1/2 mx-auto mx-auto object-cover"/>
+        <main className="container mx-auto my-40 flex flex-col items-center justify-center bg-gray-200 rounded-3xl">
+            <section className="w-full bg-gray-900 rounded-3xl px-4 text-center text-3xl">
+                {city ? (
+                    <div className="w-full pb-20">
+                        <h1 className="my-4 text-gray-100 text-5xl">{city.name}</h1>
+                        <div className="w-full">
+                            <img src={city.image} alt="" className="w-full mx-auto mx-auto rounded-3xl  object-cover"/>
+                        </div>
                     </div>
-                </div>
-            ) : (
-                <p>Loading city information...</p>
-            )}
+                ) : (
+                    <p>Loading city information...</p>
+                )}
             </section>
             <section>
                 <Anchor key='/cities' to={`/cities/`}>
@@ -65,7 +65,7 @@ const CityDetails = () => {
                 
                 itineraries?.length > 0 
                 ? 
-                <section className="grid grid-cols-1 gap-4">
+                <section className="w-full grid grid-cols-1 gap-4">
                     {
 
                         itineraries?.map((itinerary) => {

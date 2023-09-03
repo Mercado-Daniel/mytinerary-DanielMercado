@@ -7,7 +7,7 @@ import '../styles/Header.css'
 const Home = () => {
     return (
     
-        <main>
+        <main className="container mx-auto rounded-3xl bg-gray-100 my-40">
                 
             <section>
                 <Carrousel/>

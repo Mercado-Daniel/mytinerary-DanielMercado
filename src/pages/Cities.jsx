@@ -37,7 +37,7 @@ const Cities = () => {
     
 
     return (
-        <main className="container  mx-auto mt-40 mb-20 md:my-20" >
+        <main className="container mx-auto my-40 bg-gray-200 rounded-3xl   mx-auto mt-40 mb-20 md:my-20" >
                 
             <section className="text-center my-5">
                 <h1 className="text-3xl">Cities</h1>
